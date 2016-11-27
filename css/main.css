@@ -10,22 +10,27 @@ html {
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
   box-sizing: border-box;
+
 }
 
 * {
-  box-sizing: inherit;
+  box-sizing:inherit;
+}
+
+body {
+  margin:0;
 }
 
 img {
-  display: inline-block;
+  display: block;
   width: 100%;
 }
 
 @media only screen and (min-width: 19.875em) {
 
   img {
-    display: block;;
-    width: 19em;
+    display: inherit;
+    width: 100%;
   }
 
   img:nth-child(2) {
@@ -40,20 +45,43 @@ img {
 
 @media only screen and (min-width: 25em) {
 
-  img, img:nth-child(2) {
+
+    img, img:nth-child(2) {
     display: inline-block;
-    width: 11.8em;
+    float: left;
+    width: 50%;
   }
 
-  img, img:nth-child(5) {
-    display:inline-block;
-    width: 11.8em;
+    img,
+    img:nth-child(5) {
+    display: inline-block;
+    float: left;
+    width: 50%;
   }
 
   img:first-child {
-    display: inline-block;
-    width: 25em;
+    float: left;
+    width: 100%;
   }
+
+}
+
+@media only screen and (min-width: 38em) {
+  img,
+  img:last-child {
+    display: none;
+  }
+
+  img, img:nth-child(2) {
+  display: inline-block;
+  float: left;
+  width: 33.3333%;
+}
+
+img:nth-child(3) {
+  float: left;
+  width: 33.3333%;
+}
 
 
 }
