@@ -14,11 +14,11 @@ html {
 }
 
 * {
-  box-sizing:inherit;
+  box-sizing: inherit;
 }
 
 body {
-  margin:0;
+  margin: 0;
 }
 
 img {
@@ -50,13 +50,13 @@ img {
     width: 100%;
   }
 
-    img,img:nth-child(5) {
+  img, img:nth-child(5) {
     display: inline-block;
     float: left;
     width: 50%;
   }
 
-  img,img:nth-child(2) {
+  img, img:nth-child(2) {
     display: inline-block;
     float: left;
     width: 50%;
@@ -67,30 +67,30 @@ img {
 @media only screen and (min-width: 38em) {
 
   img, img:nth-child(2) {
-  display: inline-block;
-  float: left;
-  width: 33.3333%;
+    display: inline-block;
+    float: left;
+    width: 33.3333%;
   }
 
   img:last-child {
     display: none;
   }
 
-img:nth-child(3) {
-  float: left;
-  width: 33.3333%;
+  img:nth-child(3) {
+    float: left;
+    width: 33.3333%;
   }
 }
 
 @media only screen and (min-width: 60em) {
 
   img:first-child {
-    float:left;
-    width:66.6666%;
+    float: left;
+    width: 66.6666%;
   }
 
   img:last-child {
     display: inline-block;
-    width:33.3333%;
+    width: 33.3333%;
   }
 }
